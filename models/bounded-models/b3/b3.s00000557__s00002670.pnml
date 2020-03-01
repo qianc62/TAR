@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Petri net created by UML2oWFN 2.00-unreleased reading file b3.xml.s00000557##s00002670 .
+  See http://www.gnu.org/software/bpel2owfn for more details.
+-->
+
+<pnml>
+  <net id="bpel-net" type="owfn">
+
+<!-- input places -->
+<!-- output places -->
+<!-- internal places -->
+    <place id="p31">
+      <name>
+        <text>merge.s00000945.output.s00000938</text>
+      </name>
+    </place>
+
+    <place id="p34">
+      <name>
+        <text>alpha</text>
+      </name>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+
+    <place id="p33">
+      <name>
+        <text>startNode.s00001116.output.default</text>
+      </name>
+    </place>
+
+    <place id="p9">
+      <name>
+        <text>merge.s00000945.activated</text>
+      </name>
+    </place>
+
+    <place id="p32">
+      <name>
+        <text>startNode.s00000940.output.default</text>
+      </name>
+    </place>
+
+    <place id="p27">
+      <name>
+        <text>callToTask.s00001458.inputCriterion.s00000937.used</text>
+      </name>
+    </place>
+
+    <place id="p30">
+      <name>
+        <text>callToTask.s00001458.output.s00000959</text>
+      </name>
+    </place>
+
+    <transition id="t2">
+      <name>
+        <text>process.s00000557##s00002670.inputCriterion.s00000937</text>
+      </name>
+    </transition>
+
+    <transition id="t13">
+      <name>
+        <text>merge.s00000945.activate.s00000948</text>
+      </name>
+    </transition>
+
+    <transition id="t15">
+      <name>
+        <text>merge.s00000945.fire.s00000953</text>
+      </name>
+    </transition>
+
+    <transition id="t12">
+      <name>
+        <text>merge.s00000945.activate.s00000946</text>
+      </name>
+    </transition>
+
+    <transition id="t26">
+      <name>
+        <text>callToTask.s00001458.inputCriterion.s00000937</text>
+      </name>
+    </transition>
+
+    <transition id="t29">
+      <name>
+        <text>callToTask.s00001458.outputCriterion.s00000939</text>
+      </name>
+    </transition>
+
+
+    <arc id="a1" source="p31" target="t26">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a2" source="p33" target="t13">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a3" source="p34" target="t2">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a4" source="t29" target="p30">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a5" source="t13" target="p9">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a6" source="t2" target="p33">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a7" source="t15" target="p31">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a8" source="t12" target="p9">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a9" source="p9" target="t15">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a10" source="p27" target="t29">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a11" source="p32" target="t12">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a12" source="t2" target="p32">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a13" source="t26" target="p27">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+
+    <toolspecific tool="owfn" version="1.0">
+      <finalmarking xmlns="http://www.informatik.hu-berlin.de/top/tools4bpel">
+        <text>p30 </text>
+      </finalmarking>
+    </toolspecific>
+  </net>
+</pnml>

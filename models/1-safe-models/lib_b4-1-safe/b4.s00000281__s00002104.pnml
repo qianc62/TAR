@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Petri net created by UML2oWFN 2.00-unreleased reading file b4.xml.s00000281##s00002104 .
+  See http://www.gnu.org/software/bpel2owfn for more details.
+-->
+
+<pnml>
+  <net id="bpel-net" type="owfn">
+
+<!-- input places -->
+<!-- output places -->
+<!-- internal places -->
+    <place id="p35">
+      <name>
+        <text>callToProcess.s00000982.output.s00000850</text>
+      </name>
+    </place>
+
+    <place id="p36">
+      <name>
+        <text>startNode.s00000774.output.default</text>
+      </name>
+    </place>
+
+    <place id="p32">
+      <name>
+        <text>callToProcess.s00000982.inputCriterion.s00000772.used</text>
+      </name>
+    </place>
+
+    <place id="p37">
+      <name>
+        <text>alpha</text>
+      </name>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+
+    <transition id="t34">
+      <name>
+        <text>callToProcess.s00000982.outputCriterion.s00000773</text>
+      </name>
+    </transition>
+
+    <transition id="t4">
+      <name>
+        <text>process.s00000281##s00002104.inputCriterion.s00000772</text>
+      </name>
+    </transition>
+
+    <transition id="t31">
+      <name>
+        <text>callToProcess.s00000982.inputCriterion.s00000772</text>
+      </name>
+    </transition>
+
+
+    <arc id="a1" source="t4" target="p36">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a2" source="p36" target="t31">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a3" source="p32" target="t34">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a4" source="p37" target="t4">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a5" source="t34" target="p35">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a6" source="t31" target="p32">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+
+    <toolspecific tool="owfn" version="1.0">
+      <finalmarking xmlns="http://www.informatik.hu-berlin.de/top/tools4bpel">
+        <text>p35 </text>
+      </finalmarking>
+    </toolspecific>
+  </net>
+</pnml>

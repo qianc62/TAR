@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Petri net created by UML2oWFN 2.00-unreleased reading file a2.xml.s00000098##s00002282 .
+  See http://www.gnu.org/software/bpel2owfn for more details.
+-->
+
+<pnml>
+  <net id="bpel-net" type="owfn">
+
+<!-- input places -->
+<!-- output places -->
+<!-- internal places -->
+    <place id="p92">
+      <name>
+        <text>process.s00000098##s00002282.outputCriterion.s00000704_omega</text>
+      </name>
+    </place>
+
+    <place id="p91">
+      <name>
+        <text>alpha</text>
+      </name>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+
+    <place id="p82">
+      <name>
+        <text>callToProcess.s00002274.input.s00000918</text>
+      </name>
+    </place>
+
+    <place id="p88">
+      <name>
+        <text>callToProcess.s00002274.input.s00000919</text>
+      </name>
+    </place>
+
+    <place id="p89">
+      <name>
+        <text>startNode.s00000705.output.default</text>
+      </name>
+    </place>
+
+    <place id="p75">
+      <name>
+        <text>callToProcess.s00002274.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p77">
+      <name>
+        <text>callToTask.s00002286.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p20">
+      <name>
+        <text>decision.s00002283.activated</text>
+      </name>
+    </place>
+
+    <place id="p74">
+      <name>
+        <text>decision.s00002283.output.s00000712</text>
+      </name>
+    </place>
+
+    <place id="p78">
+      <name>
+        <text>decision.s00002283.output.s00000716</text>
+      </name>
+    </place>
+
+    <place id="p79">
+      <name>
+        <text>decision.s00002283.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p80">
+      <name>
+        <text>decision.s00002283.output.s00000722</text>
+      </name>
+    </place>
+
+    <place id="p84">
+      <name>
+        <text>decision.s00002283.output.s00000717</text>
+      </name>
+    </place>
+
+    <place id="p85">
+      <name>
+        <text>callToTask.s00001095.input.s00001082</text>
+      </name>
+    </place>
+
+    <place id="p81">
+      <name>
+        <text>merge.s00000730.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p76">
+      <name>
+        <text>callToTask.s00001094.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p33">
+      <name>
+        <text>merge.s00000730.activated</text>
+      </name>
+    </place>
+
+    <place id="p83">
+      <name>
+        <text>decision.s00002283.output.s00000720</text>
+      </name>
+    </place>
+
+    <place id="p86">
+      <name>
+        <text>callToTask.s00001095.output.s00000713</text>
+      </name>
+    </place>
+
+    <place id="p45">
+      <name>
+        <text>callToProcess.s00002274.inputCriterion.s00000700.used</text>
+      </name>
+    </place>
+
+    <place id="p53">
+      <name>
+        <text>callToTask.s00002286.inputCriterion.s00000700.used</text>
+      </name>
+    </place>
+
+    <place id="p90">
+      <name>
+        <text>process.s00000098##s00002282.input.s00000916</text>
+      </name>
+    </place>
+
+    <place id="p87">
+      <name>
+        <text>callToTask.s00001094.input.s00001082</text>
+      </name>
+    </place>
+
+    <place id="p61">
+      <name>
+        <text>callToTask.s00001094.inputCriterion.s00000700.used</text>
+      </name>
+    </place>
+
+    <place id="p70">
+      <name>
+        <text>callToTask.s00001095.inputCriterion.s00000700.used</text>
+      </name>
+    </place>
+
+    <place id="p73">
+      <name>
+        <text>callToTask.s00002286.input.s00000918</text>
+      </name>
+    </place>
+
+    <transition id="t4">
+      <name>
+        <text>process.s00000098##s00002282.inputCriterion.s00000700</text>
+      </name>
+    </transition>
+
+    <transition id="t12">
+      <name>
+        <text>process.s00000098##s00002282.outputCriterion.s00000704</text>
+      </name>
+    </transition>
+
+    <transition id="t29">
+      <name>
+        <text>decision.s00002283.activate.s00000708</text>
+      </name>
+    </transition>
+
+    <transition id="t30">
+      <name>
+        <text>decision.s00002283.fire.s00000711</text>
+      </name>
+    </transition>
+
+    <transition id="t31">
+      <name>
+        <text>decision.s00002283.fire.s00000715</text>
+      </name>
+    </transition>
+
+    <transition id="t32">
+      <name>
+        <text>decision.s00002283.fire.s00000724</text>
+      </name>
+    </transition>
+
+    <transition id="t36">
+      <name>
+        <text>merge.s00000730.activate.s00000731</text>
+      </name>
+    </transition>
+
+    <transition id="t37">
+      <name>
+        <text>merge.s00000730.activate.s00000733</text>
+      </name>
+    </transition>
+
+    <transition id="t39">
+      <name>
+        <text>merge.s00000730.fire.s00000741</text>
+      </name>
+    </transition>
+
+    <transition id="t44">
+      <name>
+        <text>callToProcess.s00002274.inputCriterion.s00000700</text>
+      </name>
+    </transition>
+
+    <transition id="t47">
+      <name>
+        <text>callToProcess.s00002274.outputCriterion.s00000704</text>
+      </name>
+    </transition>
+
+    <transition id="t52">
+      <name>
+        <text>callToTask.s00002286.inputCriterion.s00000700</text>
+      </name>
+    </transition>
+
+    <transition id="t55">
+      <name>
+        <text>callToTask.s00002286.outputCriterion.s00000704</text>
+      </name>
+    </transition>
+
+    <transition id="t60">
+      <name>
+        <text>callToTask.s00001094.inputCriterion.s00000700</text>
+      </name>
+    </transition>
+
+    <transition id="t63">
+      <name>
+        <text>callToTask.s00001094.outputCriterion.s00000704</text>
+      </name>
+    </transition>
+
+    <transition id="t69">
+      <name>
+        <text>callToTask.s00001095.inputCriterion.s00000700</text>
+      </name>
+    </transition>
+
+    <transition id="t72">
+      <name>
+        <text>callToTask.s00001095.outputCriterion.s00000704</text>
+      </name>
+    </transition>
+
+
+    <arc id="a1" source="t29" target="p20">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a2" source="p20" target="t30">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a3" source="t36" target="p33">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a4" source="t32" target="p74">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a5" source="p84" target="t69">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a6" source="t63" target="p76">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a7" source="t47" target="p75">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a8" source="t47" target="p88">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a9" source="p20" target="t31">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a10" source="p81" target="t12">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a11" source="t32" target="p80">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a12" source="p20" target="t32">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a13" source="p90" target="t52">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a14" source="t12" target="p92">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a15" source="t72" target="p85">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a16" source="t47" target="p82">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a17" source="p80" target="t37">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a18" source="t4" target="p89">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a19" source="t55" target="p77">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a20" source="p77" target="t29">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a21" source="p78" target="t44">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a22" source="t30" target="p79">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a23" source="t31" target="p83">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a24" source="p83" target="t69">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a25" source="t37" target="p33">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a26" source="t39" target="p81">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a27" source="p82" target="t36">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a28" source="p33" target="t39">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a29" source="p79" target="t44">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a30" source="t44" target="p45">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a31" source="p45" target="t47">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a32" source="p89" target="t52">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a33" source="p85" target="t60">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a34" source="t52" target="p53">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a35" source="t4" target="p90">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a36" source="p53" target="t55">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a37" source="t60" target="p61">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a38" source="p86" target="t60">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a39" source="p61" target="t63">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a40" source="t30" target="p78">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a41" source="t69" target="p70">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a42" source="t31" target="p84">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a43" source="p91" target="t4">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a44" source="t63" target="p87">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a45" source="p87" target="t12">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a46" source="p70" target="t72">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a47" source="t72" target="p86">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a48" source="p88" target="t12">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a49" source="t55" target="p73">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+    <arc id="a50" source="p73" target="t29">
+      <inscription>
+        <text>1</text>
+      </inscription>
+    </arc>
+
+    <toolspecific tool="owfn" version="1.0">
+      <finalmarking xmlns="http://www.informatik.hu-berlin.de/top/tools4bpel">
+        <text>p92 p75 p74 p76 </text>
+      </finalmarking>
+    </toolspecific>
+  </net>
+</pnml>
